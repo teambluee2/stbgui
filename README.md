@@ -2,13 +2,13 @@
 
 > Ubuntu 16.04.1 LTS (GNU/Linux 3.14.32-xxxx-grs-ipv6-64 x86_64)
 
-## openMips 6.1 (based on openPLi) is build using oe-alliance build-environment "4.1" and several git repositories: ##
+## teamblue 6.1 (based on openPLi) is build using oe-alliance build-environment "4.1" and several git repositories: ##
 
 > [https://github.com/oe-alliance/oe-alliance-core/tree/4.1](https://github.com/oe-alliance/oe-alliance-core/tree/4.1 "OE-Alliance")
 > 
-> [https://github.com/openmips/stbgui/tree/master](https://github.com/openmips/stbgui/tree/master "openMips E2")
+> [https://github.com/teamblue/stbgui/tree/master](https://github.com/teamblue/stbgui/tree/master "teamblue E2")
 > 
-> [https://github.com/openmips/skin-pax/tree/master](https://github.com/openmips/skin-pax/tree/master "openMips Skin")
+> [https://github.com/teamblue/skin-pax/tree/master](https://github.com/teamblue/skin-pax/tree/master "teamblue Skin")
 
 > and a lot more...
 
@@ -29,29 +29,29 @@
     select "NO"
 
 ----------
-3 - Add user openmipsbuilder
+3 - Add user teambluebuilder
 
-    sudo adduser openmipsbuilder
-
-----------
-4 - Switch to user openmipsbuilder
-
-    su openmipsbuilder
+    sudo adduser teambluebuilder
 
 ----------
-5 - Switch to home of openmipsbuilder
+4 - Switch to user teambluebuilder
+
+    su teambluebuilder
+
+----------
+5 - Switch to home of teambluebuilder
 
     cd ~
 
 ----------
-6 - Create folder openmips
+6 - Create folder teamblue
 
-    mkdir -p ~/openmips
+    mkdir -p ~/teamblue
 
 ----------
-7 - Switch to folder openmips
+7 - Switch to folder teamblue
 
-    cd openmips
+    cd teamblue
 
 ----------
 8 - Clone oe-alliance git
@@ -71,5 +71,5 @@
 ----------
 11 - Finally you can start building a image
 
-    MACHINE=gbquadplus DISTRO=openmips make image
+    MACHINE=gbquadplus DISTRO=teamblue make image
 
